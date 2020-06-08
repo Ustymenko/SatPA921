@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE students[<!ENTITY hello "Привіт, ">]>
+<students>
+  <!--Тест коментаря-->
+  <student>
+    <pib>&hello; Степаненко Іван Іванович</pib>
+    <bday>02.05.1996</bday>
+    <avg>10,99</avg>
+    <address region="Житомирська обл." country="Україна">Житомир</address>
+  </student>
+  <student>
+    <pib>&hello; Петренко Петро Іванович</pib>
+    <bday>02.05.1998</bday>
+    <avg>8,99</avg>
+    <address region="Житомирська обл." country="Україна">Коростень</address>
+  </student>
+</students>
