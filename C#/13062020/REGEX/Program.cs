@@ -38,7 +38,7 @@ namespace REGEX
             Console.Write("Enter phone: (+XX(XXX)-XX-XX-XXX)");
             string phone = Console.ReadLine();///"+38(067)-13-25-393";
             regex = new Regex(phPattern);
-            if (regex.IsMatch(phone))
+            if (regex.IsMatch(phone)) 
                 Console.WriteLine("phone correct.");
             else
                 Console.WriteLine(" phone is not correct!");
