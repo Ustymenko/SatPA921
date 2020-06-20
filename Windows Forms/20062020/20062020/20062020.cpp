@@ -1,5 +1,4 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
 #include <tchar.h>
 #include <Windows.h>
 #include <string>
