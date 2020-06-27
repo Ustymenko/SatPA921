@@ -46,12 +46,10 @@ LRESULT CALLBACK  WinProc(HWND hWnd, UINT uMessage,
         int y = HIWORD(lParam);
         swprintf_s(buf, L"k=%10d  (%d;%d)\n", k,x,y);
         SetWindowText(hWnd, buf);
-
     }break;
     case WM_LBUTTONDOWN:{
         MessageBox(hWnd, L"LBUTTONDOWN", TEXT("Info"),
-            MB_OK | MB_ICONINFORMATION);
-    
+            MB_OK | MB_ICONINFORMATION);    
     }break;
     case WM_DESTROY:
         PostQuitMessage(0);
@@ -63,9 +61,7 @@ LRESULT CALLBACK  WinProc(HWND hWnd, UINT uMessage,
 }
 
 INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR lpszCmdLine, int nCmdShow) {
-
     WinClass CW(hInst,WinProc,TEXT("Моя перша прога WinAPI"));
-
     HWND hWnd = CreateWindowEx(0, CW.GetName(),
         TEXT("прога WinAPI"), WS_OVERLAPPEDWINDOW | WS_VISIBLE,
         100, 200, 640, 480, 0, 0, hInst, 0);
@@ -82,6 +78,4 @@ INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR lpszCmdLine, int 
         DispatchMessage(&msg);
     }
     return   msg.wParam;
-
 }
-
